@@ -13,13 +13,13 @@ public class Cannibal {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();      // Input number of numbers to be entered
         int q = scanner.nextInt();      // Input number of queries to be entered
-        Set<Integer> numberSet = new HashSet<>();
+        Set<Integer> numberSet = new HashSet<>();   // HashSet, so that repetition of numbers will be avoided
         for (int i=0; i<n; i++) {
             numberSet.add(scanner.nextInt());       // Input Numbers
         }
 
         ArrayList<Integer> numbers = new ArrayList<>(numberSet);
-        Collections.sort(numbers);      // Sorts numbers into descending order
+        Collections.sort(numbers);      // Sorts numbers into ascending order
         for (int i=0; i<q; i++) {
             int count = 0;
             int query = scanner.nextInt();      // Input query number
